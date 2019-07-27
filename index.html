@@ -53,6 +53,29 @@
             </div>
         </div>
         <style>
+            @media only screen and (max-width: 450px){
+                .home-content{
+                    text-align: center;
+                }
+            }
+            @media only screen and (max-width: 450px){
+                .home-content div{
+                    display: block;
+                    position: relative;
+                }
+            }
+            @media only screen and (max-width: 450px){
+                .dp{
+                    margin-left: 0% !important ;
+                }
+            }
+            @media only screen and (max-width: 450px){
+                .details h3, h2, h1{
+                    text-align: center !important;
+                    margin-left: 0px !important;
+                    font-size: 15px !important;
+                }
+            }
             .home-content{
                 position: absolute;
                 width: 100%;
@@ -68,9 +91,10 @@
                 position: absolute;
                 float: right;
             }
+            
             .details h1{
                 color: white;
-                font-size: 60px;
+                font-size: 60px !important;
                 letter-spacing: 10px;
                 margin-left: 20px;
                 margin-top: 10px;
@@ -92,11 +116,12 @@
             }
             .details h3{
                 text-align: left;
-                font-size: 20px;
+                font-size: 20px !important;
                 color: bisque;
                 margin-left: 15px;
                 margin-top: -45px;
             }
+            
             
             .brand{
                 color: #E1E8ED;

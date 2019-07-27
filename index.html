@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <script>
-        window.onscroll = function(){"use strict"; if(document.body.scrollTop >= window.innerHeight - 70 || document.documentElement.scrollTop >= window.innerHeight - 70){document.getElementById('nav').style['background-color'] = '#000000';}else{document.getElementById('nav').style.backgroundColor = '';} if(document.body.scrollTop >= 3*window.innerHeight || document.documentElement.scrollTop >= 3*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[3].className = 'active';}else if(document.body.scrollTop >= 2*window.innerHeight || document.documentElement.scrollTop >= 2*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[2].className = 'active';}else if(document.body.scrollTop >= 1*window.innerHeight || document.documentElement.scrollTop >= 1*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[1].className = 'active';}else{var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[0].className = 'active';}}
+        window.onscroll = function(){"use strict"; if(document.body.scrollTop >= window.innerHeight - 500 || document.documentElement.scrollTop >= window.innerHeight - 500){document.getElementById('nav').style['background-color'] = '#000000';}else{document.getElementById('nav').style.backgroundColor = '';} if(document.body.scrollTop >= 3*window.innerHeight || document.documentElement.scrollTop >= 3*window.innerHeight){let item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[3].className = 'active';}else if(document.body.scrollTop >= 2*window.innerHeight || document.documentElement.scrollTop >= 2*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[2].className = 'active';}else if(document.body.scrollTop >= 1*window.innerHeight || document.documentElement.scrollTop >= 1*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[1].className = 'active';}else{var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[0].className = 'active';}}
         
     </script>
     
@@ -21,68 +21,91 @@
         <div class="bg-home" style="z-index: 0; width: 100vw; height: 100vh; background-image: url('img/bg.jpg')">
 <!-- *****************************************************HOME***************************************************** -->
             <div id="home" style="z-index: 1; position: absolute; width: inherit; height: inherit;">
-                <div class="overlay" id="nav">
-                    <nav>
-                        <div class="nav-brand">
-                            <a href="index.html" class="brand" style="">mKitkat</a>
-                        </div>
-                        <div class="nav-items">
-                            <ul>
-                                <li><a onclick = "active(this)" class="active" href="#home">Home</a></li>
-                                <li><a onclick = "active(this)" class="single" href="#about">About</a></li>
-                                <li><a onclick = "active(this)" class="single" href="#skills">Skills</a></li>
-                                <li><a onclick = "active(this)" class="single" href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-<!--
-                <div class="overlay" style="z-index: 0; position: absolute; top: 25vh; display: flex;">
-                    <div class="home-content">
-                        <div class="dp">
-                            <img src="img/dp.jpg" style="width: 200px; height: 200px; border-radius: 50%; border:5px solid white;">
-                        </div>
-                        <div class="details">
-                            <h1>Ankit Raj</h1>
-                            <h2> IIIT Ranchi</h2>
-                            <h2><marquee>Indian Institute of Information Technoloy Ranchi</marquee></h2>
+                <div style="width: 100vw; height: 100vh; position: absolute;">
+                    <div class="overlay" id="nav">
+                        <nav>
+                            <div class="nav-brand">
+                                <a href="index.html" class="brand">mKitkat</a>
+                            </div>
+                            <div class="nav-items">
+                                <ul>
+                                    <li><a onclick = "active(this)" class="active" href="#home">Home</a></li>
+                                    <li><a onclick = "active(this)" class="single" href="#about">About</a></li>
+                                    <li><a onclick = "active(this)" class="single" href="#skills">Skills</a></li>
+                                    <li><a onclick = "active(this)" class="single" href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div style="z-index: 1; width: 100vw; position: absolute; top: 25vh; display: flex;">
+                        <div class="home-content">
+                            <div class="dp">
+                                <img src="img/dp.jpg" style="width: 200px; height: 200px; border-radius: 50%; border:5px solid white;">
+                            </div>
+                            <div class="details">
+                                <h1>Ankit Raj</h1>
+                                <h3>Computer Science and Engineering, Undergraduate (2018-22)</h3>
+                                <h2 id="changeText">IIIT Ranchi</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
--->
             </div>
         </div>
         <style>
+            .home-content{
+                position: absolute;
+                width: 100%;
+            }
             .home-content div{
                 display: inline-block;
-                margin-top: 10vh;
-                position: static;
             }
             .dp{
-                margin-left: 15vw;
+                margin-left: 15%;
+            }
+            .details{
+                margin-top: 3%;
+                position: absolute;
+                float: right;
             }
             .details h1{
-                margin-top: 7vh; 
-                margin-left: 33vw;
                 color: white;
-                font-size: 50px;
+                font-size: 60px;
+                letter-spacing: 10px;
+                margin-left: 20px;
+                margin-top: 10px;
             }
             .details h2{
-                margin-left: 35vw;
-                display: inline-block;
-                color: whitesmoke;
+                text-align: left;
+                color: antiquewhite;
+                font-size: 30px;
+                margin-top: -15px;
+                margin-left: 15px;
+                letter-spacing: 3px;
             }
-            
+            #changeText{
+                opacity: 1;
+                transition: opacity 1s;
+            }
+            .hide{
+                opacity: 0 !important;
+            }
+            .details h3{
+                text-align: left;
+                font-size: 20px;
+                color: bisque;
+                margin-left: 15px;
+                margin-top: -45px;
+            }
             
             .brand{
                 color: #E1E8ED;
                 font-size: 1.6vw;
                 letter-spacing: 7px;
-                -moz-transition:font-size, letter-spacing .2s;
-                -webkit-transition:font-size, letter-spacing .2s;
+                -moz-transition:letter-spacing .2s;
+                -webkit-transition:letter-spacing .2s;
             }
             .brand:hover{
-                font-size: 1.7vw;
                 letter-spacing: 12px;
             }
             .bg-home{
@@ -94,7 +117,7 @@
             
             .overlay{
                 position: fixed;
-                z-index: 2;
+                z-index: 100;
                 width: 100%;
             }
             nav div{
@@ -144,15 +167,17 @@
             }
         </style>
         <script>
-            function active(a){var item = document.querySelectorAll('.active'); item[0].className = 'single'; a.className = 'active';
-            document.querySelector("#contact").scrollIntoView({behavior: "smooth"}); }
-//            function on(a){a.style.fontSize = '2vw'; a.style.letterSpacing = '9px';}
-//            function off(a){a.style.fontSize = '1.6vw'; a.style.letterSpacing = '7px';}
+            function active(a){let item = document.querySelectorAll('.active'); item[0].className = 'single'; a.className = 'active';
+            document.querySelector("#contact").scrollIntoView({behavior: "smooth"});}
+        </script>
+        <script>
+            let text = ["IIIT Ranchi", "Indian Institute of Informaiton Technology Ranchi", "भारतीय सूचना प्रौद्योगिकी संस्थान रााँची"];
+            var counter = 1;var elem = document.getElementById("changeText");setInterval(change, 2500);function change(){elem.classList.add('hide');setTimeout(function () {elem.innerHTML = text[counter]; elem.classList.remove('hide'); counter++;if (counter >= text.length) {counter = 0;}}, 500);}
         </script>
         
 <!--************************************************ A B O U T **************************************************-->
         
-        <div id="about" style="width: 100vw; height: 100vh; padding: 0; margin: 0; background-color: aqua">
+        <div id="about" style="z-index: 20; width: 100vw; height: 100vh; padding: 0; margin: 0; background-color: aqua">
             
         </div>
         

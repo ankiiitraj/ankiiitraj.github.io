@@ -341,7 +341,7 @@
         <script>
             let tar = document.getElementById("target");let e = document.getElementById("toggle"); let nelem = document.getElementById("nav");
             function active(a){let item = document.querySelectorAll('.active'); item[0].className = 'single'; a.className = 'active';
-            document.querySelector("#contact").scrollIntoView({behavior: "smooth"}); e.classList.remove("open"); tar.classList.add("nav-items"); tar.classList.remove("toggeled"); nelem.style.backgroundColor='';}
+            document.querySelector("#contact").scrollIntoView({behavior: "smooth"}); e.classList.remove("open"); tar.classList.add("nav-items"); tar.classList.remove("toggeled"); /*nelem.style.backgroundColor='';*/}
         
             let text = ["IIIT Ranchi", "Indian Institute of Informaiton Technology Ranchi", "भारतीय सूचना प्रौद्योगिकी संस्थान रााँची"];
             var counter = 1;var elem = document.getElementById("changeText");setInterval(change, 2500);function change(){elem.classList.add('hide');setTimeout(function () {elem.innerHTML = text[counter]; elem.classList.remove('hide'); counter++;if (counter >= text.length) {counter = 0;}}, 500);}

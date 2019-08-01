@@ -11,14 +11,14 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <script>
-        window.onscroll = function(){"use strict"; if(document.body.scrollTop >= window.innerHeight - 500 || document.documentElement.scrollTop >= window.innerHeight - 500 || e.classList.contains("open")){document.getElementById('nav').style['background-color'] = '#000000';}else{document.getElementById('nav').style.backgroundColor = '';} if(document.body.scrollTop >= 3*window.innerHeight || document.documentElement.scrollTop >= 3*window.innerHeight){let item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[3].className = 'active';}else if(document.body.scrollTop >= 2*window.innerHeight || document.documentElement.scrollTop >= 2*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[2].className = 'active';}else if(document.body.scrollTop >= 1*window.innerHeight || document.documentElement.scrollTop >= 1*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[1].className = 'active';}else{var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[0].className = 'active';}}
+        window.onscroll = function(){"use strict"; if(document.body.scrollTop >= 40 || document.documentElement.scrollTop >= 40 || e.classList.contains("open")){document.getElementById('nav').style['background-color'] = '#000000';}else{document.getElementById('nav').style.backgroundColor = '';} if(document.body.scrollTop >= 3*window.innerHeight || document.documentElement.scrollTop >= 3*window.innerHeight){let item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[3].className = 'active';}else if(document.body.scrollTop >= 2*window.innerHeight || document.documentElement.scrollTop >= 2*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[2].className = 'active';}else if(document.body.scrollTop >= 1*window.innerHeight || document.documentElement.scrollTop >= 1*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[1].className = 'active';}else{var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[0].className = 'active';}}
         
     </script>
     
         <title>Ankit Raj | IIITR</title>
     </head>
     <body style="overflow-x: hidden; margin: 0; padding: 0; font-family: 'Ubuntu', sans-serif;">
-        <div class="bg-home" style="z-index: 0; width: 100vw; height: 100vh; background-image: url('img/bg.jpg')">
+        <div class="bg-home" style="z-index: 0; width: 100vw; height: 100vh; /*background-image: url('img/bg.jpg')*/">
 <!-- *****************************************************HOME***************************************************** -->
             <div id="home" style="z-index: 1; position: absolute; width: inherit; height: inherit;">
                 <div style="width: 100vw; height: 100vh; position: absolute;">
@@ -42,7 +42,8 @@
                             </div>
                         </nav>
                     </div>
-                    <div style="z-index: 1; width: 100vw; position: absolute; top: 25vh; display: flex;">
+					<div style="height: 25vh"></div>
+                    <div style="height: 55vh;">
                         <div class="home-content">
                             <div class="dp">
                                 <img src="img/dp.jpg" style="width: 200px; height: 200px; border-radius: 50%; border:5px solid white;">
@@ -54,14 +55,31 @@
                             </div>
                         </div>
                     </div>
+					<div class="starTrail" style="position: absolute; bottom: 3px; right: 20px; height: auto; text-align: right;">
+						<h5 style="all: unset; padding: 7px; font-size: 2em; margin-block-start: 0; margin-block-end: 0; margin-inline-start: 0; margin-inline-end: 0">
+							<a class="star" style="text-decoration: none; color: rgb(249,178,148,0.5);" href="https://en.wikipedia.org/wiki/Star_trail" target="_blank">Stars Trails</a>
+						</h5>
+					</div>
                 </div>
             </div>
         </div>
+		
         <style>
+			.star:hover{
+				letter-spacing: 2px;
+				color: rgb(249,178,148) !important;
+			}
             @media only screen and (max-width: 450px){
                 .home-content{
                     text-align: center;
                 }
+				.starTrail{
+					right: 0px !important;
+					bottom: 30px !important;
+				}
+				.starTrail h5{
+					font-size: 1.5em !important;
+				}
             }
             @media only screen and (max-width: 450px){
                 .home-content div{
@@ -204,7 +222,7 @@
                 display: none;
             }
             .home-content{
-                position: absolute;
+                position: relative;
                 width: 100%;
             }
             .home-content div{
@@ -264,7 +282,7 @@
                 background-image: url(img/bg.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-attachment: fixed;
+                background-attachment: fixed !important;
             }
             
             .overlay{
@@ -374,6 +392,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
-<script src="js/script.js"></script>
+		<script src="js/script.js"></script>
     </body>
 </html>

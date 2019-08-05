@@ -1,38 +1,21 @@
 <!doctype html>
 <html lang="en" style=" scroll-behavior: smooth;">
     <head>
-    <!-- Required meta tags -->
+<!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
     <meta name="description" content="Ankit Raj-Indian Institute of Information Teechnology Ranchi-mkitkat-Competitive Programmer-Ranchi-India.">
     <meta name="keywords" content="Ankit Raj,Ankit,Raj,ankit,raj,ankit raj,iiitr, IIITR, iiit ranchi, IIIT Ranchi, IIIT ranchi, ranchi,quora,programmer,github,mkitkat, kitkat, codechef mkitkat, coder, coding,">
     <link rel = "icon" href = "img/icon.png" type = "image/x-icon"> 
-    <!-- Bootstrap CSS -->
-<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-<!-- Google Analytics -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145079673-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-145079673-1');
-	</script>
-
-	    
-    <!-- Google Fonts -->
+<!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <script>
-        window.onscroll = function(){"use strict"; if(document.body.scrollTop >= 40 || document.documentElement.scrollTop >= 40 || e.classList.contains("open")){document.getElementById('nav').style['background-color'] = '#000000';}else{document.getElementById('nav').style.backgroundColor = '';} if(document.body.scrollTop >= 3*window.innerHeight || document.documentElement.scrollTop >= 3*window.innerHeight){let item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[3].className = 'active';}else if(document.body.scrollTop >= 2*window.innerHeight || document.documentElement.scrollTop >= 2*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[2].className = 'active';}else if(document.body.scrollTop >= 1*window.innerHeight || document.documentElement.scrollTop >= 1*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[1].className = 'active';}else{var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[0].className = 'active';}}
-        
-    </script>
-    
+<!--    StyleSheet-->
+	<link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+
         <title>Ankit Raj | IIITR</title>
     </head>
     <body style="overflow-x: hidden; position: relative; margin: 0; padding: 0; font-family: 'Ubuntu', sans-serif;">
-        <div class="bg-home" style="width: 100vw; height: 100vh; /*background-image: url('img/bg.jpg')*/">
+        <div class="bg-home" style="width: 100vw; height: 100vh; background-image: url('img/bg.jpg')">
 <!-- *****************************************************HOME***************************************************** -->
             <canvas id="canvas" style="position: absolute; height: 100vh; width: 100vw;"></canvas>
 			<div id="home" style="position: relative; width: inherit; height: inherit;">
@@ -78,332 +61,27 @@
                 </div>
             </div>
         </div>
-		
-        <style>
-			.star:hover{
-				letter-spacing: 2px;
-				color: rgb(249,178,148) !important;
-			}
-            @media only screen and (max-width: 450px){
-                .home-content{
-                    text-align: center;
-                }
-				.starTrail{
-					right: 0px !important;
-					bottom: 30px !important;
-				}
-				.starTrail h5{
-					font-size: 1.5em !important;
-				}
-            }
-            @media only screen and (max-width: 450px){
-                .home-content div{
-                    display: block;
-                    position: relative;
-                }
-            }
-            @media only screen and (max-width: 450px){
-                .dp{
-                    margin-left: 0% !important;
-                }
-                .dp img{
-                    width: 150px !important;
-                    height: 150px !important;
-                }
-            }
-            @media only screen and (max-width: 450px){
-                .details h3, h2, h1{
-                    text-align: center !important;
-                    margin-left: 0px !important;
-                    font-size: 1em !important;
-                    letter-spacing: .1em !important;
-                    margin-top: -30px !important;
-                }
-            }
-            @media only screen and (max-width: 450px){
-                .nav-items{
-                    display: none;
-                }
-                nav{
-                    display: inline-block;
-                    width: 100%;
-                }
-                .nav-brand{
-                    margin: 0em !important;
-                    padding: 0em !important;
-                    display: block;
-                }
-                .nav-brand a{
-                    margin: .1em;
-                    padding: .1em;
-                }
-                #toggle{
-                  z-index: 10000;
-                  width: 60px;
-                  height: 45px;
-                  display: block;
-                  float: right;
-                  position: relative;
-                  margin-top: 25px;
-                  -webkit-transform: rotate(0deg);
-                  -moz-transform: rotate(0deg);
-                  -o-transform: rotate(0deg);
-                  transform: rotate(0deg);
-                  -webkit-transition: .5s ease-in-out;
-                  -moz-transition: .5s ease-in-out;
-                  -o-transition: .5s ease-in-out;
-                  transition: .5s ease-in-out;
-                  cursor: pointer;
-                }
-                #toggle span {
-                  display: block;
-                  position: absolute;
-                  height: 5px;
-                  width: 50%;
-                  background: white;
-                  border-radius: 9px;
-                  opacity: 1;
-                  left: 0;
-                  -webkit-transform: rotate(0deg);
-                  -moz-transform: rotate(0deg);
-                  -o-transform: rotate(0deg);
-                  transform: rotate(0deg);
-                  -webkit-transition: .25s ease-in-out;
-                  -moz-transition: .25s ease-in-out;
-                  -o-transition: .25s ease-in-out;
-                  transition: .25s ease-in-out;
-                }
-                #toggle span:nth-child(1) {
-                  margin-top: .0em;
-                  top: 0px;
-                }
-                #toggle span:nth-child(2) {
-                  top: 8px;
-                }
-                #toggle span:nth-child(3) {
-                  top: 16px;
-                }
-                #toggle.open span:nth-child(1) {
-                  top: 5px;
-                  -webkit-transform: rotate(135deg);
-                  -moz-transform: rotate(135deg);
-                  -o-transform: rotate(135deg);
-                  transform: rotate(135deg);
-                }
-                #toggle.open span:nth-child(2) {
-                  opacity: 0;
-                  left: +60px;
-                }
-                #toggle.open span:nth-child(3) {
-                  top: 5px;
-                  -webkit-transform: rotate(-135deg);
-                  -moz-transform: rotate(-135deg);
-                  -o-transform: rotate(-135deg);
-                  transform: rotate(-135deg);
-                }
-                .toggeled{
-                    display: flex;
-                    z-index: 2000;
-                    background-color: rgb(0, 0, 0, 0.9);
-                    float: none;
-                    position: fixed;
-                    top: 4.4em;
-                    height: auto;
-                    width: 100%;
-                }
-                
-                
-                .toggeled ul{
-                    list-style-type: none;
-                    padding-inline-start: 0em;
-                    margin-block-start: 0em;
-                    margin-block-end: 0em;
-                }
-                .toggeled a{
-                    display: block;
-                    text-decoration: none;
-                    margin-left: 20px;
-                    margin-bottom: 10px;
-                    padding: 5px;
-                    
-                    width: inherit;
-                    float: left;
-                }
-                
-            }
-            
-            
-            #toggler{
-                display: none;
-            }
-            .home-content{
-                position: relative;
-                width: 100%;
-            }
-            .home-content div{
-                display: inline-block;
-            }
-            .dp{
-                margin-left: 15%;
-            }
-            .details{
-                margin-top: 3%;
-                position: absolute;
-                float: right;
-            }
-            
-            .details h1{
-                color: white;
-                font-size: 3.5em !important;
-                letter-spacing: 10px;
-                margin-left: 20px;
-                margin-top: 10px !important;
-            }
-            .details h2{
-                text-align: left;
-                color: antiquewhite;
-                font-size: 1.5em;
-                margin-top: -10px  !important;
-                margin-left: 15px;
-                letter-spacing: 3px;
-            }
-            #changeText{
-                opacity: 1;
-                transition: opacity 1s;
-            }
-            .hide{
-                opacity: 0 !important;
-            }
-            .details h3{
-                text-align: left;
-                font-size: 1.6em;
-                color: bisque;
-                margin-left: 15px;
-                margin-top: -40px;
-            }
-            
-            
-            .brand{
-                color: #E1E8ED;
-                font-size: 150%;
-                letter-spacing: 7px;
-                -moz-transition:letter-spacing .2s;
-                -webkit-transition:letter-spacing .2s;
-            }
-            .brand:hover{
-                letter-spacing: 12px;
-            }
-            .bg-home{
-                background-image: url(img/bg.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-attachment: fixed !important;
-            }
-            
-            .overlay{
-                position: fixed;
-                z-index: 100;
-                width: 100%;
-            }
-            nav div{
-                display: inline-block;
-            }
-            
-            .nav-brand{
-                padding-top: 5px;
-                padding-left: 10px;
-                margin-left: 10px;
-                float: left;
-            }
-            
-            .nav-items{
-                float: right !important;
-                margin-top: .1em;
-                margin-right: 1em;
-            }
-            
-            .nav-items ul{
-                list-style-type: none;
-                margin-block-start: 0em;
-                margin-block-end: 0em;
-            }
-            
-            .nav-items ul li{
-                float: left;
-            }
-            .nav-items a{
-                text-decoration: none;
-                display: block;
-/*                margin-top: .4em;*/
-                margin: .4em .2em .2em .1em;
-                padding: .5em .5em;
-                text-align: center;
-                font-size: 1.2em;
-                letter-spacing: 2.5px;
-            }
-            a.single{
-                color: #b2bec3;
-            }
-            
-            .nav-brand a{
-                text-decoration: none;
-                display: block;
-                margin: .2em;
-                padding: .2em;
-                text-align: center;
-                font-size: 2em;
-                letter-spacing: 5px;
-            }
-            li a:hover:not(.active) {
-                color: #9893DA;
-                letter-spacing: 4px;
-                -moz-transition:letter-spacing .2s;
-                -webkit-transition:letter-spacing .2s;
-            }
-            .active {
-                color: white;
-            }
-        </style>
-        <script>
-            let tar = document.getElementById("target");let e = document.getElementById("toggle"); let nelem = document.getElementById("nav");
-            function active(a){let item = document.querySelectorAll('.active'); item[0].className = 'single'; a.className = 'active';
-            document.querySelector("#contact").scrollIntoView({behavior: "smooth"}); e.classList.remove("open"); tar.classList.add("nav-items"); tar.classList.remove("toggeled"); /*nelem.style.backgroundColor='';*/}
-        
-            let text = ["IIIT Ranchi", "Indian Institute of Informaiton Technology Ranchi", "भारतीय सूचना प्रौद्योगिकी संस्थान रााँची"];
-            var counter = 1;var elem = document.getElementById("changeText");setInterval(change, 2500);function change(){elem.classList.add('hide');setTimeout(function () {elem.innerHTML = text[counter]; elem.classList.remove('hide'); counter++;if (counter >= text.length) {counter = 0;}}, 500);}
-        
-            function tog(e){if(!(e.classList.contains("open"))){e.classList.add("open"); tar.classList.remove("nav-items"); tar.classList.add("toggeled"); nelem.style['background-color'] = '#000000';} else{e.classList.remove("open"); tar.classList.add("nav-items"); tar.classList.remove("toggeled"); if(document.body.scrollTop < (window.innerHeight -500) && document.documentElement.scrollTop < (window.innerHeight -500)){ nelem.style.backgroundColor='';}}}
-        </script>
-
 <!--************************************************ A B O U T **************************************************-->
-        
         <div id="about" style="z-index: 20; width: 100vw; height: 100vh; padding: 0; margin: 0; background-color: aqua">
             
         </div>
         
 <!--************************************************ S K I L L S ************************************************-->
-        
         <div id="skills" style="width: 100vw; height: 100vh; padding: 0; margin: 0; background-color: cornflowerblue">
             
         </div>
-        
 <!--************************************************ C O N T A C T ************************************************-->
-        
         <div id="contact" style="width: 100vw; height: 100vh; padding: 0; margin: 0; background-color: white">
             
         </div>
         
-        
-        
-        
-        
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<!--        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
-<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
-<!--        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
 		<script src="js/particles.js"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-145079673-1');
+		</script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145079673-1"></script>
     </body>
 </html>

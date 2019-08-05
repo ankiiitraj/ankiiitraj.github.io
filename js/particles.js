@@ -123,4 +123,4 @@ function draw()
 	}
 }
 setup();
-setInterval(draw, 30);
+setInterval(draw, 45);

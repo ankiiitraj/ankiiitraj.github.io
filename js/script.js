@@ -1,5 +1,5 @@
 
-let dots = []; // array of Jitter objects
+let dots = [];
 var canvasDiv = document.getElementById('home');
 var w = canvasDiv.clientWidth - 10;
 var h = canvasDiv.clientHeight -10;
@@ -28,9 +28,31 @@ function draw() {
 
 function lined()
 {
-    for(var i = 0; i < dots.length; ++i){
-        for(var j = i + 1; j < dots.length; ++j){
+//    let dict = [];
+//    for(var i = 0; i < dots.length; ++i){
+//    	var foo = {};
+//		foo = {'x': dots[i].x, 'y' : dots[i].y};
+//		dict.push(foo);
+//	}
+//	dots.sort((a, b) => a.x - b.x);
+//	for(var i = 0; i < dots.lenght; ++i){
+//		//var xsq = dots[i].x * dots[i].x;
+//		//var ysq = dots[i].y * dots[i].y;
+//        for(var j = i +1; j < dots.length; ++j){
+//			console.log("dots");
+//			var distance = dist(dots[i].x, dots[i].y, dots[j].x, dots[j].y);
+//			let wt = map(distance, 0, 150, 1, 0);
+//			strokeWeight(wt);
+//			stroke(225);
+//			line(dots[i].x, dots[i].y, dots[j].x, dots[j].y);
+//		}
+//    }
+	var count = 0;
+	dots.sort((a, b) => a.x - b.x)
+	for(var i = 0; i < dots.length; ++i){
+        for(var j = i + 1;(j < dots.length && dots[j].x <= (dots[i].x +150)); ++j){
             var distance = dist(dots[i].x, dots[i].y, dots[j].x, dots[j].y);
+			count++;
             if(distance <= 150){
                 let wt = map(distance, 0, 150, 1, 0);
                 strokeWeight(wt);
@@ -39,10 +61,23 @@ function lined()
             }
         }
     }
+//	var count1 = 0;
+//    for(var i = 0; i < dots.length; ++i){
+//        for(var j = i + 1; j < dots.length; ++j){
+//            var distance = dist(dots[i].x, dots[i].y, dots[j].x, dots[j].y);
+//			count1++;
+//            if(distance <= 150){
+//                let wt = map(distance, 0, 150, 1, 0);
+//                strokeWeight(wt);
+//                stroke(225);
+//                line(dots[i].x, dots[i].y, dots[j].x, dots[j].y);
+//            }
+//        }
+//    }
+//	console.log(count1);
 }
 
 
-// Jitter class
 class dot {
   constructor() {
     this.x = random(width);

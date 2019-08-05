@@ -211,12 +211,6 @@
 .brand:hover{
 	letter-spacing: 12px;
 }
-.bg-home{
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed !important;
-}
-
 .overlay{
 	position: fixed;
 	z-index: 100;

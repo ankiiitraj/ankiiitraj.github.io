@@ -92,7 +92,6 @@ function interact()
 
 function setup()
 {
-	console.log(1);
 	var numberOfParticles = Math.floor(mapThese(window.innerWidth, 350, 1400, 30, 100));
 	for(var i = 0; i < numberOfParticles; ++i)
 		dots.push(new dot());
@@ -107,7 +106,6 @@ function draw()
 		if(dots[i].x < 0 || dots[i].x > canvas.width || dots[i].y < 0 || dots[i].y > canvas.height)
 			count++;
 	}
-	console.log(count);
 	pen.clearRect(0, 0, canvas.width, canvas.height);
 	for(var i = 0; i < dots.length; ++i)
 	{

@@ -150,6 +150,20 @@
 
 }
 
+.affiliate{
+	display: block;
+	text-align: center;
+	background-color: aquamarine;
+}
+
+.affiliate div{
+	padding: 0.3em 0;
+	font-size: 2em;
+}
+
+.affiliate-content{
+	padding: 0.5em;
+}
 
 #toggler{
 	display: none;

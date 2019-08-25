@@ -120,7 +120,7 @@
 	  transform: rotate(-135deg);
 	}
 	.toggeled{
-		display: flex;
+		display: block;
 		z-index: 2000;
 		background-color: rgb(0, 0, 0, 0.9);
 		float: none;
@@ -144,25 +144,10 @@
 		margin-bottom: 10px;
 		padding: 5px;
 
-		width: inherit;
+		width: 100%;
 		float: left;
 	}
 
-}
-
-.affiliate{
-	display: block;
-	text-align: center;
-	background-color: aquamarine;
-}
-
-.affiliate div{
-	padding: 0.3em 0;
-	font-size: 2em;
-}
-
-.affiliate-content{
-	padding: 0.5em;
 }
 
 #toggler{
@@ -213,7 +198,6 @@
 	margin-left: 15px;
 	margin-top: -40px;
 }
-
 
 .brand{
 	color: #E1E8ED;

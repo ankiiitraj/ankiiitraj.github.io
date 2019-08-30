@@ -7,8 +7,8 @@
 		text-align: center;
 	}
 	.starTrail{
-		right: 0px !important;
-		bottom: 30px !important;
+		left: 0px !important;
+		bottom: 20px !important;
 	}
 	.starTrail h5{
 		font-size: 1.5em !important;
@@ -150,6 +150,21 @@
 
 }
 
+.social{
+	position: fixed;
+	right: 0;
+	bottom: 3px;
+	background-color: aliceblue;
+	padding: 2px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.social span{
+	padding: 0 0.3rem;
+}
+.social a:hover{
+	font-size: 3rem;
+}
 .recommends{
 	background-color: rgb(36, 110, 196);
 	border-radius: 100px; 
@@ -212,6 +227,7 @@
 	color: #E1E8ED;
 	font-size: 150%;
 	letter-spacing: 7px;
+	transition:letter-spacing .2sec;
 	-moz-transition:letter-spacing .2s;
 	-webkit-transition:letter-spacing .2s;
 }
@@ -275,6 +291,7 @@ a.single{
 li a:hover:not(.active) {
 	color: #9893DA;
 	letter-spacing: 4px;
+	transition:letter-spacing .2sec;
 	-moz-transition:letter-spacing .2s;
 	-webkit-transition:letter-spacing .2s;
 }

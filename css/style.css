@@ -171,34 +171,27 @@
 	display: none;
 }
 .home-content{
+	text-align: center;
 	position: relative;
 	width: 100%;
 }
 .home-content div{
 	display: inline-block;
 }
-.dp{
-	margin-left: 15%;
-}
 .details{
 	margin-top: 3%;
-	position: absolute;
-	float: right;
 }
 
 .details h1{
 	color: white;
 	font-size: 3.5em !important;
 	letter-spacing: 10px;
-	margin-left: 20px;
 	margin-top: 10px !important;
 }
 .details h2{
-	text-align: left;
 	color: antiquewhite;
 	font-size: 1.5em;
 	margin-top: -10px  !important;
-	margin-left: 15px;
 	letter-spacing: 3px;
 }
 #changeText{
@@ -209,10 +202,8 @@
 	opacity: 0 !important;
 }
 .details h3{
-	text-align: left;
 	font-size: 1.6em;
 	color: bisque;
-	margin-left: 15px;
 	margin-top: -40px;
 }
 

@@ -26,8 +26,8 @@ class dot{
 	{
 		this.x = Math.floor((Math.random())*window.innerWidth);
 		this.y = Math.floor((Math.random())*window.innerHeight);
-		this.xSpeed = (Math.random()*3 - 1.5);
-		this.ySpeed = (Math.random()*8 - 4);
+		this.xSpeed = (Math.random()*10 - 5);
+		this.ySpeed = (Math.random()*10 - 5);
 		this.colorR = Math.floor(Math.random()*225);
 		this.colorB = Math.floor(Math.random()*225);
 		this.colorG = Math.floor(Math.random()*225);
@@ -44,11 +44,6 @@ class dot{
 	{
 		this.x += this.xSpeed;
 		this.y += this.ySpeed;
-		if(this.x >= canvas.width/2){
-			this.xSpeed -= 0.3;
-		}
-		else
-			this.xSpeed += 0.3;
 		this.colorR = Math.random()*225;
 		this.colorB = Math.random()*225;
 		this.colorG = Math.random()*225;
@@ -78,7 +73,7 @@ function interact()
             var distance = (dots[i].x-dots[j].x)*(dots[i].x-dots[j].x)+(dots[i].y-dots[j].y)*(dots[i].y-dots[j].y);
 			count++;
             if(distance <= 150*150){
-                let wt = mapThese(distance, 0, 22500, 0.5, 0);
+                let wt = mapThese(distance, 0, 22500, 0.4, 0);
 				pen.beginPath();
 				pen.moveTo(dots[i].x, dots[i].y);
 				pen.lineTo(dots[j].x, dots[j].y);
@@ -92,7 +87,7 @@ function interact()
 
 function setup()
 {
-	var numberOfParticles = Math.floor(mapThese(window.innerWidth, 350, 1400, 30, 100));
+	var numberOfParticles = Math.floor(mapThese(window.innerWidth, 350, 1400, 20, 70));
 	for(var i = 0; i < numberOfParticles; ++i)
 		dots.push(new dot());
 	console.log(numberOfParticles);

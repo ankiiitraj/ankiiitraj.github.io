@@ -1,17 +1,6 @@
-.star:hover{
-	letter-spacing: 2px;
-	color: rgb(249,178,148) !important;
-}
 @media only screen and (max-width: 450px){
 	.home-content{
 		text-align: center;
-	}
-	.starTrail{
-		left: 0px !important;
-		bottom: 20px !important;
-	}
-	.starTrail h5{
-		font-size: 1.5em !important;
 	}
 }
 @media only screen and (max-width: 450px){

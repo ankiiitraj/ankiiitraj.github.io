@@ -116,4 +116,4 @@ function draw()
 	}
 }
 setup();
-setInterval(draw, 45);
+setTimeout(function(){setInterval(draw, 45)}, 1000);

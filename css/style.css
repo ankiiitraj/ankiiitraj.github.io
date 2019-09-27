@@ -147,6 +147,7 @@
 	border-bottom-left-radius: 10px;
 }
 .social span{
+	margin-right: 2rem; 
 	padding: 0 0.3rem;
 }
 .fa{
@@ -154,7 +155,7 @@
 }
 .fa:hover{
 	transition-duration: .2s;
-	font-size: 3rem !important;
+	transform: rotateX(30deg) rotateY(20deg);
 }
 
 #toggler{

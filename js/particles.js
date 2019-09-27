@@ -21,13 +21,16 @@ canvas.height = canvas.offsetHeight;
 console.log(canvas.width, canvas.height);
 var dots = [];
 
+var maxDist = mapThese(window.innerWidth, 350, 1400, 150, 170);
+var colorCount = 0;
+
 class dot{
 	constructor()
 	{
 		this.x = Math.floor((Math.random())*window.innerWidth);
 		this.y = Math.floor((Math.random())*window.innerHeight);
-		this.xSpeed = (Math.random()*10 - 5);
-		this.ySpeed = (Math.random()*10 - 5);
+		this.xSpeed = (Math.random()*15 - 5);
+		this.ySpeed = (Math.random()*15 - 5);
 		this.colorR = Math.floor(Math.random()*225);
 		this.colorB = Math.floor(Math.random()*225);
 		this.colorG = Math.floor(Math.random()*225);
@@ -44,6 +47,10 @@ class dot{
 	{
 		this.x += this.xSpeed;
 		this.y += this.ySpeed;
+		
+	}
+	updateCol()
+	{
 		this.colorR = Math.random()*225;
 		this.colorB = Math.random()*225;
 		this.colorG = Math.random()*225;
@@ -69,11 +76,11 @@ function interact()
 	var count = 0;
 	dots.sort((a, b) => a.x - b.x);
 	for(var i = 0; i < dots.length; ++i){
-        for(var j = i + 1;(j < dots.length && dots[j].x <= (dots[i].x + 150)); ++j){
+        for(var j = i + 1;(j < dots.length && dots[j].x <= (dots[i].x + maxDist)); ++j){
             var distance = (dots[i].x-dots[j].x)*(dots[i].x-dots[j].x)+(dots[i].y-dots[j].y)*(dots[i].y-dots[j].y);
 			count++;
-            if(distance <= 150*150){
-                let wt = mapThese(distance, 0, 22500, 0.4, 0);
+            if(distance <= maxDist*maxDist){
+                let wt = mapThese(distance, 0, maxDist*maxDist, 0.5, 0);
 				pen.beginPath();
 				pen.moveTo(dots[i].x, dots[i].y);
 				pen.lineTo(dots[j].x, dots[j].y);
@@ -95,6 +102,7 @@ function setup()
 
 function draw()
 {
+	colorCount++;
 	var count = 0;
 	for(var i = 0; i < dots.length; ++i)
 	{
@@ -113,6 +121,8 @@ function draw()
 	{
 		dots[i].update();
 		dots[i].check();
+		if(colorCount %3 == 0)
+			dots[i].updateCol();
 	}
 }
 setup();

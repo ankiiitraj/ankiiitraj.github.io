@@ -13,6 +13,23 @@ var counter = 1;var elem = document.getElementById("changeText");setInterval(cha
 /*part of Changing color of NavBar from transparent to Black on scrool*/
 function tog(e){if(!(e.classList.contains("open"))){e.classList.add("open"); tar.classList.remove("nav-items"); tar.classList.add("toggeled"); nelem.style['background-color'] = '#000000';} else{e.classList.remove("open"); tar.classList.add("nav-items"); tar.classList.remove("toggeled"); if(document.body.scrollTop < (window.innerHeight -500) && document.documentElement.scrollTop < (window.innerHeight -500)){ nelem.style.backgroundColor='';}}}
 
+// Ading Social icons baced on divice width
+function socialWid(){
+	var thisId = document.getElementById("soc");
+	console.log(window.innerWidth);
+	if(window.innerWidth >= 800){
+		thisId.style.top = '0px';
+		thisId.style.paddingTop = '.5em';
+		thisId.style.margin = '.4em';
+		thisId.style.left = window.innerWidth/3 + 'px';
+		thisId.style.zIndex = '1000';
+	}
+	else{
+		thisId.style.bottom = '0px';
+		thisId.style.right = '0px';
+	}
+}
+
 /*Particle Interaction Animation*/
 var canvas = document.getElementById("canvas");
 var pen = canvas.getContext("2d");

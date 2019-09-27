@@ -141,8 +141,6 @@
 
 .social{
 	position: fixed;
-	right: 0;
-	bottom: 3px;
 	/* background-color: aliceblue; */
 	padding: 2px;
 	border-top-left-radius: 10px;
@@ -156,7 +154,7 @@
 }
 .fa:hover{
 	transition-duration: .2s;
-	font-size: 2.5rem !important;
+	font-size: 3rem !important;
 }
 
 #toggler{

@@ -21,12 +21,15 @@ function socialWid(){
 		thisId.style.top = '0px';
 		thisId.style.paddingTop = '.5em';
 		thisId.style.margin = '.4em';
-		thisId.style.left = window.innerWidth/3 + 'px';
+		thisId.style.left = '50%';
+		thisId.style.transform = 'translateX(-50%)';
 		thisId.style.zIndex = '1000';
 	}
 	else{
 		thisId.style.bottom = '0px';
-		thisId.style.right = '0px';
+		thisId.style.textAlign = 'center';
+		thisId.style.backgroundColor = '#1b1b1b'
+		thisId.style.width = '100vw';
 	}
 }
 

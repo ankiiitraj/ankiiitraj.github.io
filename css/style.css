@@ -143,11 +143,8 @@
 	position: fixed;
 	/* background-color: aliceblue; */
 	padding: 2px;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
 }
 .social span{
-	margin-right: 2rem; 
 	padding: 0 0.3rem;
 }
 .fa{

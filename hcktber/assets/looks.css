@@ -1,12 +1,3 @@
-@font-face {
-	font-family: "Space Mono";
-	src: url("assets/monos.ttf");
-}
-@font-face {
-	font-family: "Roboto";
-	src: url("assets/Roboto.ttf");
-}
-
  body {
 	font-family: 'Space Mono', monospace;
   	background-color: #152347;

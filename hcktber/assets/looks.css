@@ -1,10 +1,10 @@
 @font-face {
 	font-family: "Space Mono";
-	src: url("/assets/monos.ttf");
+	src: url("assets/monos.ttf");
 }
 @font-face {
 	font-family: "Roboto";
-	src: url("/assets/Roboto.ttf");
+	src: url("assets/Roboto.ttf");
 }
 
  body {
@@ -56,13 +56,13 @@
 	height: 100vh;
 }
 .bg1{
-	content: url('/img/bg1.png');
+	content: url('img/bg1.png');
 	position: absolute;
 	z-index: -1;
 	left: 0;
 }
 .bg2{
-	content: url('/img/bg2.png');
+	content: url('img/bg2.png');
 	position: absolute;
 	z-index: -1;
 	right: 0;

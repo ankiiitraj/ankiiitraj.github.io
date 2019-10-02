@@ -5,10 +5,10 @@
 
 	<head>
 		<link rel="stylesheet" href="assets/looks.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 		<TITLE>A simple list</TITLE>
 	</head>
 	
@@ -23,19 +23,19 @@
 		</div>
 		<!--Step 1 - Change the text inside <div> tags-->
 		<div id="container">
-			<div class="wrapper">
+			<div class="wrapper" data-aos="fade-up">
 				<h1>Ankit Raj</h1> <!--Enter Your Name-->
 				<p>I'm a Tech Enthasuiast! I love WebDev and Open Source. I do Competitive Coding as a Sport.</p> <!--Write something about yourslf-->
 			</div>
-			<div class="wrapper">
+			<div class="wrapper" data-aos="fade-up">
 				<h1>Vishal Pratap Singh</h1> <!--Enter Your Name-->
 				<p>I'm a Tech Enthasuiast! I love WebDev and Open Source. I do Competitive Coding as a Sport.</p> <!--Write something about yourslf-->
 			</div>
-			<div class="wrapper">
+			<div class="wrapper" data-aos="fade-up">
 				<h1>Sanskar Seth</h1> <!--Enter Your Name-->
 				<p>I'm a Tech Enthasuiast! I love WebDev and Open Source. I do Competitive Coding as a Sport.</p> <!--Write something about yourslf-->
 			</div>
-			<div class="wrapper">
+			<div class="wrapper" data-aos="fade-up"	>
 				<h1>Akash Anand</h1> <!--Enter Your Name-->
 				<p>I'm a Tech Enthasuiast! I love WebDev and Open Source. I do Competitive Coding as a Sport.</p> <!--Write something about yourslf-->
 			</div>
@@ -45,16 +45,20 @@
 			</div>
 			<div class="wrapper">
 				<h1>Prateek Ranjan</h1> <!--Enter Your Name-->
-				<p>I'm a Tech Enthasuiast! I love WebDev and Open Source. I do Competitive Coding as a Sport.</p> <!--Write something about yourslf-->
+				<p>I'm a passionate learner.I love programming. I am learning WebDev and open Source.</p> <!--Write something about yourslf-->
 			</div>
 			<div class="wrapper">
 				<h1>Kumar Kush</h1> <!--Enter Your Name-->
 				<p>I'm a Tech Enthasuiast! I love WebDev and Open Source. I do Competitive Coding as a Sport.</p> <!--Write something about yourslf-->
 			</div>
-		</div>
-	
-		<!--Step 2 - If you are already into web development, go to the "Some Advance Stuff" folder and make it more advanced-->
-	
+		</div><!--Step 2 - If you are already into web development, go to the "Some Advance Stuff" folder and make it more advanced-->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		  AOS.init({
+			offset: 120,
+ 			 duration: 1000,
+		  });
+		</script>
 	</body>
 	
 	</HTML>

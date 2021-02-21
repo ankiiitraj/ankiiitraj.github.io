@@ -1,0 +1,17 @@
+.nav{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #00000033;
+  height: 8vh;
+  align-items: center;
+}
+.nav-item{
+  font-size: large;
+  padding: .7rem;
+}
+.nav-item > a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+.intro{
+  height: 76vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro > div{
+  min-width: 350px;
+  max-width: 500px;
+  color: white;
+  text-align: center;
+}
+.intro-head{
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+.intro-name{
+  font-size: calc(6em);
+  letter-spacing: 10px;
+}
+.intro-doin{
+  font-size: x-large;
+  margin-top: 10px;
+}
+.intro-gh-follow{
+  margin: auto;
+  margin-top: 25px;
+  display: inline-block;
+}

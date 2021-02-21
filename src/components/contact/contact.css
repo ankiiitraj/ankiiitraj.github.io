@@ -1,0 +1,60 @@
+.contact{
+  min-height: 100px;
+  background-color: #00000044;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.contact > span{
+  color: white;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.contact-social{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  min-width: 300px;
+  color: white;
+  justify-content: center;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-size: xx-large;
+  align-items: center;
+}
+.contact-social > a{
+  text-decoration: none;
+  color: white;
+}
+.contact-icon{
+  margin-right: 2em;
+  transition-duration: .5s;
+}
+.contact-fb:hover{
+  color: #1877F2;
+}
+.contact-in:hover{
+  color: #0a66c2;
+}
+.contact-gh:hover{
+  color: #f0f6fcb3;
+}
+.contact-dev{
+  font-size: xxx-large;
+  margin-right: 0;
+}
+.contact-dev:hover{
+  color: #00c548;
+}
+.contact-mail{
+  color: white;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-mail a{
+  color: white;
+  /* text-decoration: none; */
+}

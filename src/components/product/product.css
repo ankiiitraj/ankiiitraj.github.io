@@ -1,0 +1,22 @@
+.product{
+  min-width: 300px;
+  max-width: 500px;
+  color: white;
+  border: solid gray 1px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  background-color: #00000066;
+}
+.product-head > a{
+  text-decoration: none;
+  color: white;
+  font-size: xx-large;
+}
+.product-body{
+  font-size: large;
+  line-height: 1.618;
+}
+.product-footer{
+  display: flex;
+}

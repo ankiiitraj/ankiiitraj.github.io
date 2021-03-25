@@ -4,13 +4,11 @@ import "./intro.css";
 
 const Intro = () => {
   const doin = [
-    "Computer Science and Engineering",
     "Undergrad, 2022",
     "IIIT Ranchi",
     "Incoming Software Engineer",
     "Competitive Programmer",
-    "Open Source",
-    "IIITian"
+    "Open Source Developer"
   ];
   const [idx, updateIdx] = useState(0);
 

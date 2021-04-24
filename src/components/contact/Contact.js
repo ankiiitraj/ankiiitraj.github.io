@@ -4,6 +4,7 @@ import {
   SiLinkedin,
   SiGithub,
   SiDevDotTo,
+  SiInstagram
 } from "react-icons/si";
 import CopyMailTo from "react-copy-mailto";
 
@@ -19,28 +20,35 @@ const Contact = () => {
           rel="noreferrer"
           href="https://facebook.com/ankiiitraj"
         >
-          {" "}
-          <SiFacebook className="contact-fb contact-icon" />{" "}
+          <SiFacebook className="contact-fb contact-icon" />
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.instagram.com/ankiiitraj/"
+        >
+          <SiInstagram className="contact-insta contact-icon" />
         </a>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://linkedin.com/in/ankiiitraj"
         >
-          {" "}
-          <SiLinkedin className="contact-in contact-icon" />{" "}
+          <SiLinkedin className="contact-in contact-icon" />
         </a>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://github.com/ankiiitraj"
         >
-          {" "}
-          <SiGithub className="contact-gh contact-icon" />{" "}
+          <SiGithub className="contact-gh contact-icon" />
         </a>
-        <a target="_blank" rel="noreferrer" href="https://dev.to/ankiiitraj">
-          {" "}
-          <SiDevDotTo className="contact-dev contact-icon" />{" "}
+        <a 
+          target="_blank" 
+          rel="noreferrer" 
+          href="https://dev.to/ankiiitraj"
+        >
+          <SiDevDotTo className="contact-dev contact-icon" />
         </a>
       </div>
       <div className="contact-mail">

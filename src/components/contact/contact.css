@@ -28,11 +28,14 @@
   color: white;
 }
 .contact-icon{
-  margin-right: 2em;
+  padding: 0px 0.5em;
   transition-duration: .5s;
 }
 .contact-fb:hover{
   color: #1877F2;
+}
+.contact-insta:hover{
+  color: #C13584;
 }
 .contact-in:hover{
   color: #0a66c2;

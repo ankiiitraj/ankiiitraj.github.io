@@ -3,7 +3,7 @@ export const products = [
     title: "Doto - Progress Tracking",
     about:
       "A platform to keep track of progress on DSA problem solving. Currently handling 1000+ users and total 10000+page views.",
-    link: "https://dotodsa.netlify.app",
+    link: "https://www.doto.codes",
     source: "https://github.com/ankiiitraj/doto-client",
     username: "ankiiitraj",
     repo: "doto-client",

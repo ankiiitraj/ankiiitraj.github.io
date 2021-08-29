@@ -25,7 +25,7 @@ const Contact = () => {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://www.instagram.com/ankiiitraj/"
+          href="https://www.instagram.com/anktrj_/"
         >
           <SiInstagram className="contact-insta contact-icon" />
         </a>

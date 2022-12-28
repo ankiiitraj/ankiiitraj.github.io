@@ -209,7 +209,7 @@ const GhFollowkBtn = ({ username }) => {
           rel="noreferrer"
           href={`https://github.com/${username}`}
         >
-          <SiGithub /> Follow @{username}
+          <SiGithub /> @{username}
         </a>
       </div>
       <div style={{ backgroundColor: "black", padding: "5px" }}>
